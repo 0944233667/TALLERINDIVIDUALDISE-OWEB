@@ -1,47 +1,57 @@
-.encabezado{
+/* ----- HEADER ----- */
+.encabezado {
     display: flex;
     align-items: center;
     background-color: bisque;
+    padding: 10px;
 }
-.imagen-encabezado{
+
+.imagen-encabezado {
     width: 10%;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
+    margin-left: 10px;
 }
-.menu-navegacion{
+
+.menu-navegacion {
     display: flex;
     justify-content: space-around;
+    background-color: #eee;
+    padding: 10px 0;
 }
-.menu-navegacion a{
+
+.menu-navegacion a {
     text-decoration: none;
     font-size: 1.5rem;
+    color: black;
 }
-.menu-navegacion a.activo{
+
+.menu-navegacion a.activo {
     color: #d35400;
     border-bottom: 3px solid #d35400;
     padding-bottom: 5px;
 }
 
-.principal{
+/* ----- CONTENIDO PRINCIPAL ----- */
+.principal {
     max-width: 2000px;
     margin: 2rem auto;
-    padding: 1.5 ;
-    box-shadow: 0.2px 6px rgba(0,0,0,0.1);
-    background-color: #ffffff;
+    padding: 1.5rem;
+    background-color: white;
     border-radius: 8px;
 }
 
 h2 {
-    font-family: "Roboto", "sans-serif";
+    font-family: Arial, sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 main p {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -49,16 +59,15 @@ main video {
     width: 100%;
     max-height: 500px;
     border-radius: 8px;
-    object-fit: cover;
 }
 
+/* ----- FOOTER ----- */
 footer {
     background-color: #333;
-    color: #ffffff;
+    color: white;
     padding: 2rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -69,19 +78,20 @@ footer nav {
 }
 
 footer nav a {
-    color: #ffffff;
     text-decoration: none;
-    font-size: 1rem;
+    color: white;
+    display: inline-block; /* <-- FIX IMPORTANTE */
+    padding: 0;            /* sin espacio extra */
+    margin: 0 5px;
 }
 
 footer nav a.activo {
     color: #f39c12;
-    border-bottom: 2px solid #f39c12;
+    border-bottom: 2px solid #f39c12; /* queda pegado al texto */
 }
 
 footer .propaganda img {
     width: 150px;
-    border-radius: 4px;
 }
 
 footer p {
